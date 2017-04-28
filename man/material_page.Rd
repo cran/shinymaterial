@@ -4,12 +4,17 @@
 \alias{material_page}
 \title{Create a shinymaterial page}
 \usage{
-material_page(title, ...)
+material_page(title, ..., nav_bar_color = NULL,
+  background_color = "grey lighten-4")
 }
 \arguments{
 \item{title}{String. The title of the page.}
 
-\item{...}{The UI elements to place in the page}
+\item{...}{The UI elements to place in the page.}
+
+\item{nav_bar_color}{Color of the navigation bar. Leave blank for the default color.}
+
+\item{background_color}{Page background color. Leave blank for the default color.}
 }
 \description{
 Build a shinymaterial page.
@@ -17,6 +22,8 @@ Build a shinymaterial page.
 \examples{
 material_page(
   title = "Example Title",
+  nav_bar_color = "red",
+  background_color = "blue",
   shiny::tags$h1("Page Content")
 )
 }

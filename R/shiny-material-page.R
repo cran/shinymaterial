@@ -2,23 +2,27 @@
 #'
 #' Build a shinymaterial page.
 #' @param title String. The title of the page.
-#' @param ... The UI elements to place in the page
+#' @param ... The UI elements to place in the page.
+#' @param nav_bar_color Color of the navigation bar. Leave blank for the default color.
+#' @param background_color Page background color. Leave blank for the default color.
 #' @examples
 #' material_page(
 #'   title = "Example Title",
+#'   nav_bar_color = "red",
+#'   background_color = "blue",
 #'   shiny::tags$h1("Page Content")
 #' )
-material_page <- function(title, ...){
+material_page <- function(title, ..., nav_bar_color = NULL, background_color = "grey lighten-4"){
   shiny::tags$html(
     # Head --------------------------------------------------------------------
     shiny::tags$head(
       # Fonts
       shiny::includeCSS(
-        "http://fonts.googleapis.com/icon?family=Material+Icons"
+        "https://fonts.googleapis.com/icon?family=Material+Icons"
       ),
       # Source Materialize CSS
       shiny::includeCSS(
-        "https://cdnjs.cloudflare.com/ajax/libs/materialize/0.98.1/css/materialize.min.css",
+        "https://cdnjs.cloudflare.com/ajax/libs/materialize/0.98.2/css/materialize.min.css",
         media = "screen,projection"
       ),
       shiny::includeCSS(
@@ -32,8 +36,14 @@ material_page <- function(title, ...){
     ),
     # Body --------------------------------------------------------------------
     shiny::tags$body(
-      class = "grey lighten-4",
+      class = background_color,
       shiny::tags$nav(
+        class = 
+          ifelse(
+            is.null(nav_bar_color),
+            "",
+            nav_bar_color
+          ),
         shiny::tags$div(
           class = "nav-wrapper",
           shiny::tags$div(
@@ -45,14 +55,9 @@ material_page <- function(title, ...){
       ),
       ...
     ),
-    # jQuery
-    # shiny::includeScript(
-    #   "https://code.jquery.com/jquery-2.1.1.min.js"
-    # ),
-   # tags$head(tags$script("$.noConflict(true);")),
     # Source Materialize Javascript
     shiny::includeScript(
-      "https://cdnjs.cloudflare.com/ajax/libs/materialize/0.98.1/js/materialize.min.js"
+      "https://cdnjs.cloudflare.com/ajax/libs/materialize/0.98.2/js/materialize.min.js"
     )
   )
 }

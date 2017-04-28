@@ -7,7 +7,7 @@
 material_parallax(image_source)
 }
 \arguments{
-\item{image_source}{String. The image file name. Place the image in a folder labeled 'www' at the same level as the application (server.R & ui.R)}
+\item{image_source}{String. The image file name. Place the image in a folder labeled 'www' at the same level as the application (server.R & ui.R).}
 }
 \description{
 Use this function to create a parallax effect in your application.
