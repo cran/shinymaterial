@@ -4,10 +4,11 @@ library(shinymaterial)
 ui <-
   material_page(
     title = "Testing",
-    nav_bar_color = 'red',
+    nav_bar_color = 'red lighten-3',
+    background_color = "white",
     material_side_nav(
       tags$h4("stuff"),
-      background_color = "blue"
+      background_color = "blue lighten-4"
     ),
     tags$div(
       class = "container",
@@ -16,7 +17,7 @@ ui <-
         modal_id = "example_modal",
         button_text = "Modal",
         title = "Example Modal Title",
-        button_color = "red",
+        button_color = "red lighten-4",
         button_depth = 5,
         shiny::tags$p("Modal Content")
       ),
@@ -25,14 +26,15 @@ ui <-
         tabs = c(
           "Example Tab 1" = "example_tab_1",
           "Example Tab 2" = "example_tab_2"
-        )
+        ),
+        color = "purple"
       ),
       material_tabs(
         tabs = c(
           "Example Tab 11" = "example_tab_11",
           "Example Tab 22" = "example_tab_22"
         ),
-        color = "blue"
+        color = "deep-purple"
       ),
       material_card(
         title = "Example Card",
@@ -63,7 +65,7 @@ ui <-
         label = "Button",
         icon = "cloud",
         depth = 5,
-        color = "blue"
+        color = "blue lighten-4"
       ),
       # Checkbox ------------------------------------------------------------------
       material_input(
@@ -86,7 +88,7 @@ ui <-
         input_id = "checkbox2",
         label = "checkbox",
         initial_value = TRUE,
-        color = "blue"
+        color = "#ef5350"
       ),
       # Switch ------------------------------------------------------------------
       material_input(
@@ -117,7 +119,7 @@ ui <-
         off_label = "Off",
         on_label = "On",
         initial_value = TRUE,
-        color = "blue"
+        color = "#bbdefb"
       ),
       # Floating Button ------------------------------------------------------------------
       # material_input(
@@ -173,7 +175,7 @@ ui <-
         min_value = 5,
         max_value = 15,
         initial_value = 10,
-        color = "blue"
+        color = "#bbdefb"
       ),
       
       # Text box ------------------------------------------------------------------
@@ -224,7 +226,7 @@ ui <-
         input_id = "example_floating_button",
         icon = "mode_edit",
         depth = 5,
-        color = "red"
+        color = "red lighten-2"
       ),
       # Radio buttons ------------------------------------------------------------------
       material_input(
@@ -265,7 +267,7 @@ ui <-
           "Pie" = "p3",
           "Brownie" = "b3"
         ),
-        color = "blue"
+        color = "#bbdefb"
       ),
       # slider ------------------------------------------------------------------
       material_input(
@@ -283,7 +285,7 @@ ui <-
         min_value = 5,
         max_value = 15,
         initial_value = 10,
-        color = "blue"
+        color = "#bbdefb"
       ),
       # dropdown
       material_input(
@@ -309,7 +311,7 @@ ui <-
         ),
         selected = c("c"),
         multiple = FALSE,
-        color = "red"
+        color = "#ef5350"
       )
     )
   )
@@ -436,4 +438,4 @@ server <- function(input, output) {
 }
 
 # Run the application
-# shinyApp(ui = ui, server = server)
+#shinyApp(ui = ui, server = server)

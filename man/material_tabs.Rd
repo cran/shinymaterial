@@ -9,7 +9,7 @@ material_tabs(tabs, color = NULL)
 \arguments{
 \item{tabs}{Named vector. The tab display names and corresponding tab ids.}
 
-\item{color}{String. The accent color of the tabs. Leave blank for the default color.}
+\item{color}{String. The accent color of the tabs. Leave blank for the default color. Visit \url{http://materializecss.com/color.html} for a list of available colors. \emph{Tab color requires using word forms of colors (e.g. 'deep-purple'). Also, lighten or darken effects do not work on tab colors.}}
 }
 \description{
 Use this function to create tabs in your application.
@@ -20,6 +20,6 @@ material_tabs(
     "Example Tab 1" = "example_tab_1",
     "Example Tab 2" = "example_tab_2"
   ),
-  color = "blue"
+  color = "deep-purple"
 )
 }

@@ -15,7 +15,7 @@ material_button(input_id, label, icon = NULL, depth = NULL, color = NULL)
 
 \item{depth}{Integer. The amount of depth of the button. The value should be between 0 and 5. Leave empty for the default depth.}
 
-\item{color}{String. The color of the button. Leave empty for the default color.}
+\item{color}{String. The color of the button. Leave empty for the default color. Visit \url{http://materializecss.com/color.html} for a list of available colors.}
 }
 \description{
 Build a shinymaterial button. The initial value is zero, and increases by one on each press.
@@ -26,6 +26,6 @@ material_button(
   label = "Button",
   icon = "cloud",
   depth = 5,
-  color = "blue"
+  color = "blue lighten-2"
 )
 }

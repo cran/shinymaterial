@@ -14,7 +14,7 @@ material_floating_button(input_id, icon = NULL, depth = NULL,
 
 \item{depth}{Integer. The amount of depth of the floating button. The value should be between 0 and 5. Leave empty for the default depth.}
 
-\item{color}{String. The color of the floating button. Leave empty for the default color.}
+\item{color}{String. The color of the floating button. Leave empty for the default color. Visit \url{http://materializecss.com/color.html} for a list of available colors.}
 }
 \description{
 Build a shinymaterial floating button. The initial value is zero, and increases by one on each press.
@@ -24,6 +24,6 @@ material_floating_button(
   input_id = "example_floating_button",
   icon = "mode_edit",
   depth = 5,
-  color = "red"
+  color = "red lighten-3"
 )
 }

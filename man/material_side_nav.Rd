@@ -14,7 +14,7 @@ material_side_nav(..., fixed = FALSE, image_source = NULL,
 
 \item{image_source}{String. The background image file name. Place the image in a folder labeled 'www' at the same level as the application (server.R & ui.R).}
 
-\item{background_color}{Side-nav background color. Leave blank for the default color.}
+\item{background_color}{Side-nav background color. Leave blank for the default color. Visit \url{http://materializecss.com/color.html} for a list of available colors.}
 }
 \description{
 UI content can be placed in side-nav.
@@ -23,6 +23,7 @@ UI content can be placed in side-nav.
 material_side_nav(
   fixed = FALSE,
   image_source = "example_image.jpg",
+  background_color = "blue lighten-4",
   shiny::tags$h1("Side-nav Content")
 )
 }

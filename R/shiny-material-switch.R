@@ -6,7 +6,7 @@
 #' @param off_label String. The label for the 'off' position of the switch.
 #' @param on_label String. The label for the 'on' position of the switch.
 #' @param initial_value Boolean. Is the switch initially on?
-#' @param color String. The color of the switch. Leave empty for the default color.
+#' @param color String. The color of the switch. Leave empty for the default color. Visit \url{http://materializecss.com/color.html} for a list of available colors. \emph{This input requires using color hex codes, rather than the word form. E.g., '#ef5350', rather than 'red lighten-1'.}
 #' @examples
 #' material_switch(
 #'   input_id = "example_switch",
@@ -14,7 +14,7 @@
 #'   off_label = "Off",
 #'   on_label = "On",
 #'   initial_value = TRUE,
-#'   color = "blue"
+#'   color = "#ef5350"
 #' )
 material_switch <- function(input_id, label, off_label, on_label, initial_value = FALSE, color = NULL){
   

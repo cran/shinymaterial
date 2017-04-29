@@ -4,13 +4,13 @@
 #' @param input_id String. The input identifier used to access the value.
 #' @param label String. The checkbox label.
 #' @param initial_value Boolean. Is the checkbox initially checked?
-#' @param color String. The color of the check. Leave empty for the default color.
+#' @param color String. The color of the check. Leave empty for the default color. Visit \url{http://materializecss.com/color.html} for a list of available colors. \emph{This input requires using color hex codes, rather than the word form. E.g., '#ef5350', rather than 'red lighten-1'.}
 #' @examples
 #' material_checkbox(
 #'   input_id = "example_checkbox",
 #'   label = "Checkbox",
 #'   initial_value = TRUE,
-#'   color = "blue"
+#'   color = "ef5350"
 #' )
 material_checkbox <- function(input_id, label, initial_value = FALSE, color = NULL) {
   

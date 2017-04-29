@@ -22,7 +22,7 @@ material_modal(modal_id, button_text, title, ..., button_icon = NULL,
 
 \item{button_depth}{Integer. The amount of depth of the button. The value should be between 0 and 5. Leave empty for the default depth.}
 
-\item{button_color}{String. The color of the button. Leave empty for the default color.}
+\item{button_color}{String. The color of the button. Leave empty for the default color. Visit \url{http://materializecss.com/color.html} for a list of available colors.}
 }
 \description{
 Put any UI object inside of a modal. The modal will open when the button is pressed.
@@ -32,7 +32,7 @@ material_modal(
   modal_id = "example_modal",
   button_text = "Modal",
   title = "Example Modal Title",
-  button_color = "red",
+  button_color = "red lighten-3",
   shiny::tags$p("Modal Content")
 )
 }

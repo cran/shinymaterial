@@ -13,7 +13,7 @@ material_checkbox(input_id, label, initial_value = FALSE, color = NULL)
 
 \item{initial_value}{Boolean. Is the checkbox initially checked?}
 
-\item{color}{String. The color of the check. Leave empty for the default color.}
+\item{color}{String. The color of the check. Leave empty for the default color. Visit \url{http://materializecss.com/color.html} for a list of available colors. \emph{This input requires using color hex codes, rather than the word form. E.g., '#ef5350', rather than 'red lighten-1'.}}
 }
 \description{
 Build a shinymaterial checkbox. The value is a boolean (TRUE if checked, FALSE if not checked).
@@ -23,6 +23,6 @@ material_checkbox(
   input_id = "example_checkbox",
   label = "Checkbox",
   initial_value = TRUE,
-  color = "blue"
+  color = "ef5350"
 )
 }

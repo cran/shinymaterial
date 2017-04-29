@@ -4,11 +4,12 @@
 #' @param ... The UI elements to place in the side-nav.
 #' @param fixed Boolean. Set to TRUE to keep side-nav open on large screens.
 #' @param image_source String. The background image file name. Place the image in a folder labeled 'www' at the same level as the application (server.R & ui.R).
-#' @param background_color Side-nav background color. Leave blank for the default color.
+#' @param background_color Side-nav background color. Leave blank for the default color. Visit \url{http://materializecss.com/color.html} for a list of available colors.
 #' @examples
 #' material_side_nav(
 #'   fixed = FALSE,
 #'   image_source = "example_image.jpg",
+#'   background_color = "blue lighten-4",
 #'   shiny::tags$h1("Side-nav Content")
 #' )
 material_side_nav <- function(..., fixed = FALSE, image_source = NULL, background_color = NULL){
