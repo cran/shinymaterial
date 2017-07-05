@@ -4,8 +4,8 @@
 \alias{material_switch}
 \title{Create a shinymaterial switch}
 \usage{
-material_switch(input_id, label, off_label, on_label, initial_value = FALSE,
-  color = NULL)
+material_switch(input_id, label, off_label = "", on_label = "",
+  initial_value = FALSE, color = NULL)
 }
 \arguments{
 \item{input_id}{String. The input identifier used to access the value.}
@@ -22,4 +22,14 @@ material_switch(input_id, label, off_label, on_label, initial_value = FALSE,
 }
 \description{
 Build a shinymaterial switch. The value is a boolean (TRUE if 'on', FALSE if 'off').
+}
+\examples{
+material_switch(
+  input_id = "example_switch",
+  label = "Switch",
+  off_label = "Off",
+  on_label = "On",
+  initial_value = TRUE,
+  color = "#ef5350"
+)
 }

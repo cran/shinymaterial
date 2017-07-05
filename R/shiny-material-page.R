@@ -1,8 +1,8 @@
 #' Create a shinymaterial page
 #'
 #' Build a shinymaterial page.
-#' @param title String. The title of the page.
 #' @param ... The UI elements to place in the page.
+#' @param title String. The title of the page.
 #' @param nav_bar_color Color of the navigation bar. Leave blank for the default color. Visit \url{http://materializecss.com/color.html} for a list of available colors.
 #' @param background_color Page background color. Leave blank for the default color. Visit \url{http://materializecss.com/color.html} for a list of available colors.
 #' @examples
@@ -12,7 +12,7 @@
 #'   background_color = "blue lighten-4",
 #'   shiny::tags$h1("Page Content")
 #' )
-material_page <- function(title, ..., nav_bar_color = NULL, background_color = "grey lighten-4"){
+material_page <- function(..., title = "", nav_bar_color = NULL, background_color = "grey lighten-4"){
   shiny::tags$html(
     # Head --------------------------------------------------------------------
     shiny::tags$head(
@@ -22,7 +22,7 @@ material_page <- function(title, ..., nav_bar_color = NULL, background_color = "
       ),
       # Source Materialize CSS
       shiny::includeCSS(
-        "https://cdnjs.cloudflare.com/ajax/libs/materialize/0.98.2/css/materialize.min.css",
+        "https://cdnjs.cloudflare.com/ajax/libs/materialize/0.99.0/css/materialize.min.css",
         media = "screen,projection"
       ),
       shiny::includeCSS(
@@ -57,7 +57,11 @@ material_page <- function(title, ..., nav_bar_color = NULL, background_color = "
     ),
     # Source Materialize Javascript
     shiny::includeScript(
-      "https://cdnjs.cloudflare.com/ajax/libs/materialize/0.98.2/js/materialize.min.js"
+      "https://cdnjs.cloudflare.com/ajax/libs/materialize/0.99.0/js/materialize.min.js"
+    ),
+    shiny::includeScript(
+      system.file("js/shiny-material-page.js",
+                  package = "shinymaterial")
     )
   )
 }
