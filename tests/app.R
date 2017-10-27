@@ -222,12 +222,12 @@ ui <-
         label = "password_box_red",
         color = "#ef5350"
       ),
-      material_floating_button(
-        input_id = "example_floating_button",
-        icon = "mode_edit",
-        depth = 5,
-        color = "red lighten-2"
-      ),
+      # material_floating_button(
+      #   input_id = "example_floating_button",
+      #   icon = "mode_edit",
+      #   depth = 5,
+      #   color = "red lighten-2"
+      # ),
       # Radio buttons ------------------------------------------------------------------
       material_input(
         type = "radio-button",
@@ -312,9 +312,17 @@ ui <-
         selected = c("c"),
         multiple = FALSE,
         color = "#ef5350"
+      ),
+      # date picker -------------------------------------------------------------
+      material_date_picker(
+        input_id = "example_date_picker",
+        label = "Date picker",
+        color = 'purple'
       )
     )
   )
+
+
 
 
 
@@ -434,6 +442,9 @@ server <- function(input, output) {
   })
   observeEvent(input$example_dropdown1, {
     message(input$example_dropdown1)
+  })
+  observeEvent(input$example_date_picker, {
+    message(input$example_date_picker)
   })
 }
 
