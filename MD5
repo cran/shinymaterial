@@ -1,4 +1,4 @@
-c25bd1d47f4782b6039b64ba07fe4382 *DESCRIPTION
+2b114dbc3c1f054cd04460d366365bf4 *DESCRIPTION
 92a1aff9e5fce817842f482bbf41652c *LICENSE
 db946d3e743bc5a22345c8b766fadf43 *NAMESPACE
 954c67db0076f7b95391975e49750574 *R/shiny-material-button.R
@@ -12,7 +12,7 @@ d4eea0d4f9f07cd3beb6aabf28f566b0 *R/shiny-material-card.R
 c8658e0540ad2d74f9e888648f2c00c3 *R/shiny-material-input.R
 f2237fa3a240de81983a8b33935c7474 *R/shiny-material-modal.R
 423d475bdb0436382c202ba9d1c83f2c *R/shiny-material-number-box.R
-dac7d49fad0c51fd073ecfe49afaf23b *R/shiny-material-page.R
+613b08ad2ae6f3de797adbb1c0e869a0 *R/shiny-material-page.R
 1aa303ea2fa68aecb065d80eed43c24e *R/shiny-material-parallax.R
 33fcdb3fd71aed94a3a0370fe220f9ba *R/shiny-material-password-box.R
 4c34ef471b57382c4ca97c5543549dc8 *R/shiny-material-radio-button.R
@@ -32,7 +32,7 @@ f88dd990824845589b9f44774bf648e9 *inst/css/shiny-material-page.css
 d41d8cd98f00b204e9800998ecf8427e *inst/css/shiny-material-side-nav-image.css
 b51d1a8b1c8198161a76567c4c6e470a *inst/css/shiny-material-side-nav.css
 305f67ef18828a28d927302a4a118692 *inst/css/shiny-material-tabs.css
-0657627bace47037546544244222c9fa *inst/doc/shinymaterial.pdf
+659cc3780d2e05136b0bf568fc6901b6 *inst/doc/shinymaterial.pdf
 aa84eddf476b22f0a625d72da981a640 *inst/js/shiny-material-button.js
 75726258d04ee11b24c8922955541bf8 *inst/js/shiny-material-checkbox.js
 cd68b9a06df7ff7c086fbd1a6d4d417f *inst/js/shiny-material-date-picker.js
