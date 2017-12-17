@@ -8,11 +8,16 @@ $(document).ready(function () {
         },
         getValue: function (el) {
             var classValue = $(el).find(".value").html();
-            if (classValue.length === 0) {
-                var inputValue = $(el).find('input').val();
-                return Number(inputValue);
+            if (classValue) {
+                if (classValue.length === 0) {
+                    var inputValue = $(el).find('input').val();
+                    return Number(inputValue);
+                } else {
+                    return Number(classValue);
+                }
             } else {
-                return Number(classValue);
+                 var inputValue = $(el).find('input').val();
+                 return Number(inputValue);
             }
         },
         subscribe: function (el, callback) {
