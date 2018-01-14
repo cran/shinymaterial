@@ -1,4 +1,4 @@
-93c4ca28a14efbad82598ae03694b64e *DESCRIPTION
+295db77bd92629db9abe746a37edca98 *DESCRIPTION
 92a1aff9e5fce817842f482bbf41652c *LICENSE
 1e86362e776f4604a88df3b4063a50d8 *NAMESPACE
 954c67db0076f7b95391975e49750574 *R/shiny-material-button.R
@@ -33,7 +33,7 @@ b5f27c74e95fd7e57cac74b133468a73 *R/update-shiny-material-checkbox.R
 d54dd68946ecad953e616f9e8bc0acfe *R/update-shiny-material-dropdown.R
 184e06110078aa032b1899dcc67fd50f *R/update-shiny-material-number-box.R
 ee556462ce6f91ede8033561df260306 *R/update-shiny-material-password-box.R
-1d377c695b8f24a897908541b54edf75 *R/update-shiny-material-radio-button.R
+736e584f2874e0a0ac613596a4e7e4ae *R/update-shiny-material-radio-button.R
 b629b86f9bd1355974b4670f4a95bccb *R/update-shiny-material-slider.R
 c45787d8f1f9f73e3a65746a82d787a0 *R/update-shiny-material-switch.R
 a58eb21ebaf315900398907dcd147ae6 *R/update-shiny-material-text-box.R
@@ -43,7 +43,7 @@ f88dd990824845589b9f44774bf648e9 *inst/css/shiny-material-page.css
 d41d8cd98f00b204e9800998ecf8427e *inst/css/shiny-material-side-nav-image.css
 b51d1a8b1c8198161a76567c4c6e470a *inst/css/shiny-material-side-nav.css
 305f67ef18828a28d927302a4a118692 *inst/css/shiny-material-tabs.css
-77f37b8ebe6207ca1105e2ffb2b62a7e *inst/doc/shinymaterial.pdf
+2cc661ccbfcf5aec550d3120450de41a *inst/doc/shinymaterial.pdf
 1022da30719d2b382a3d2bfd1e428adc *inst/img/material.png
 aa84eddf476b22f0a625d72da981a640 *inst/js/shiny-material-button.js
 22e9abe00e07a213b31faca43eee8857 *inst/js/shiny-material-checkbox.js
@@ -58,7 +58,7 @@ d55a42bc32efafc596774350e24b7b7a *inst/js/shiny-material-number-box.js
 63033aab42a38e4c207c2b50929d4bfe *inst/js/shiny-material-password-box.js
 b04f2a22170a6890e6409388d9d6d8c5 *inst/js/shiny-material-radio-button.js
 a48912cf11ae24b82a5898e672a9e966 *inst/js/shiny-material-side-nav-fixed.js
-0824a66dc385c519a102753f28216bd6 *inst/js/shiny-material-side-nav-tabs.js
+f2e3a2c1d362366913818cab6e9ce33e *inst/js/shiny-material-side-nav-tabs.js
 02df9765ba8bde0d4c214868ae3ac8d4 *inst/js/shiny-material-side-nav.js
 f7eeb0a14372b452b767e563dc689d0b *inst/js/shiny-material-slider.js
 9f5ce439094468776051f36466991d41 *inst/js/shiny-material-switch.js
@@ -112,7 +112,7 @@ a0d0f15ab587a83840849a1cb3f9baa4 *man/update_material_number_box.Rd
 648ac0e11fcf13ceb053a2e125becc1f *man/update_material_slider.Rd
 dfc27c5520415aed0e91fca465164bef *man/update_material_switch.Rd
 4ee920d018137a5b10e4940a252adcc6 *man/update_material_text_box.Rd
-8aad8244dc4fe6543b5221741f91179a *tests/app.R
+3e0d48cc52313a46b1734ef58d8e932a *tests/app.R
 006c6b2a6e9696a703a9a943bd3db3e8 *tests/fileInputTest/app.R
 eed9aab5449cc9c8430d7d258108f602 *tests/fileInputTest/www/fonts/roboto/Roboto-Bold.woff
 c0f1e4a4fdfb8048c72e86aadb2a247d *tests/fileInputTest/www/fonts/roboto/Roboto-Bold.woff2
@@ -135,6 +135,7 @@ cf4d60bc0b1d4b2314085919a00e1724 *tests/include_font_app/www/fonts/roboto/Roboto
 5136cbe62a63604402f2fedb97f246f8 *tests/include_font_app/www/fonts/roboto/Roboto-Regular.woff2
 44b78f142603eb69f593ed4002ed7a4a *tests/include_font_app/www/fonts/roboto/Roboto-Thin.woff
 1f35e6a11d27d2e10d28946d42332dc5 *tests/include_font_app/www/fonts/roboto/Roboto-Thin.woff2
+26c5b264a05cd1885ca8d135d1431c65 *tests/issues/app.R
 c347112dd629b1c99dd039cf400ab746 *tests/renderUITest/app.R
 eed9aab5449cc9c8430d7d258108f602 *tests/renderUITest/www/fonts/roboto/Roboto-Bold.woff
 c0f1e4a4fdfb8048c72e86aadb2a247d *tests/renderUITest/www/fonts/roboto/Roboto-Bold.woff2
@@ -146,9 +147,9 @@ cf4d60bc0b1d4b2314085919a00e1724 *tests/renderUITest/www/fonts/roboto/Roboto-Med
 5136cbe62a63604402f2fedb97f246f8 *tests/renderUITest/www/fonts/roboto/Roboto-Regular.woff2
 44b78f142603eb69f593ed4002ed7a4a *tests/renderUITest/www/fonts/roboto/Roboto-Thin.woff
 1f35e6a11d27d2e10d28946d42332dc5 *tests/renderUITest/www/fonts/roboto/Roboto-Thin.woff2
-596ffdf8f38a0e471c3d398b865f7220 *tests/side_nav_tabs.R
+4d0c6a38872fbc431b8c8e7e596c4a03 *tests/side_nav_tabs.R
 6463474bfe6973a81dc7cbc4a71e8dd1 *tests/test.csv
-485c548e37fa677c8fb4aefca85aa437 *tests/testUpdateDropdown/app.R
+332078477a8361d88f28d0a925c8d6ee *tests/testUpdateDropdown/app.R
 eed9aab5449cc9c8430d7d258108f602 *tests/testUpdateDropdown/www/fonts/roboto/Roboto-Bold.woff
 c0f1e4a4fdfb8048c72e86aadb2a247d *tests/testUpdateDropdown/www/fonts/roboto/Roboto-Bold.woff2
 ea36cd9a0e9eee97012a67b8a4570d7b *tests/testUpdateDropdown/www/fonts/roboto/Roboto-Light.woff
