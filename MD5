@@ -1,4 +1,4 @@
-295db77bd92629db9abe746a37edca98 *DESCRIPTION
+2b0b0d8193d4b7dbf91c79144a9bda0c *DESCRIPTION
 92a1aff9e5fce817842f482bbf41652c *LICENSE
 1e86362e776f4604a88df3b4063a50d8 *NAMESPACE
 954c67db0076f7b95391975e49750574 *R/shiny-material-button.R
@@ -18,8 +18,8 @@ f2237fa3a240de81983a8b33935c7474 *R/shiny-material-modal.R
 33fcdb3fd71aed94a3a0370fe220f9ba *R/shiny-material-password-box.R
 4c34ef471b57382c4ca97c5543549dc8 *R/shiny-material-radio-button.R
 b9f341df4479398c3f3f9cdcda8c6de0 *R/shiny-material-row.R
-646323a23124dfea283497467aafc91a *R/shiny-material-side-nav-tab-content.R
-8d2de4f2f321f868ca106b3da92cf550 *R/shiny-material-side-nav-tabs.R
+5813c6a56257aedb92b59537de33fced *R/shiny-material-side-nav-tab-content.R
+988da81a90f50a3777c4c735e781489d *R/shiny-material-side-nav-tabs.R
 5664cba570b7bf2e0cac7c32c637133b *R/shiny-material-side-nav.R
 dcb00664ae3a04515d4fc131960ce991 *R/shiny-material-slider.R
 97d438652d033acc0ea6752196fa5e37 *R/shiny-material-spinner.R
@@ -43,7 +43,7 @@ f88dd990824845589b9f44774bf648e9 *inst/css/shiny-material-page.css
 d41d8cd98f00b204e9800998ecf8427e *inst/css/shiny-material-side-nav-image.css
 b51d1a8b1c8198161a76567c4c6e470a *inst/css/shiny-material-side-nav.css
 305f67ef18828a28d927302a4a118692 *inst/css/shiny-material-tabs.css
-2cc661ccbfcf5aec550d3120450de41a *inst/doc/shinymaterial.pdf
+bddbf2bfb2d6fa9c3feb7c44c70faf4c *inst/doc/shinymaterial.pdf
 1022da30719d2b382a3d2bfd1e428adc *inst/img/material.png
 aa84eddf476b22f0a625d72da981a640 *inst/js/shiny-material-button.js
 22e9abe00e07a213b31faca43eee8857 *inst/js/shiny-material-checkbox.js
@@ -58,7 +58,7 @@ d55a42bc32efafc596774350e24b7b7a *inst/js/shiny-material-number-box.js
 63033aab42a38e4c207c2b50929d4bfe *inst/js/shiny-material-password-box.js
 b04f2a22170a6890e6409388d9d6d8c5 *inst/js/shiny-material-radio-button.js
 a48912cf11ae24b82a5898e672a9e966 *inst/js/shiny-material-side-nav-fixed.js
-f2e3a2c1d362366913818cab6e9ce33e *inst/js/shiny-material-side-nav-tabs.js
+a12a5602842b0a8428894a5ab61117db *inst/js/shiny-material-side-nav-tabs.js
 02df9765ba8bde0d4c214868ae3ac8d4 *inst/js/shiny-material-side-nav.js
 f7eeb0a14372b452b767e563dc689d0b *inst/js/shiny-material-slider.js
 9f5ce439094468776051f36466991d41 *inst/js/shiny-material-switch.js
