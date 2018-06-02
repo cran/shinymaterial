@@ -12,7 +12,20 @@ $(document).ready(function () {
                 return $(scope).find("select.shiny-material-dropdown");
             },
             getValue: function (el) {
-                return $(el).val().replace(new RegExp("_shinymaterialdropdownspace_", 'g'), " ");
+              var ans;
+              ans = $(el).val();
+              if(typeof(ans) == "string"){
+                return ans.replace(new RegExp("_shinymaterialdropdownspace_", 'g'), " ");
+              } else if(typeof(ans) == "object"){
+                for (i = 0; i < ans.length; i++) { 
+                  if(typeof(ans[i]) == "string"){
+                  ans[i] = ans[i].replace(new RegExp("_shinymaterialdropdownspace_", 'g'), " ");
+                  }
+              }
+              return ans;
+              } else {
+                return ans;
+              }
             },
             subscribe: function (el, callback) {
                 $(el).on("change.shiny-material-dropdown", function (e) {

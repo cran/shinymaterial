@@ -20,9 +20,19 @@ if(interactive()){
           title = "Example Modal Title",
           button_color = "red lighten-4",
           button_depth = 5,
-          shiny::tags$p("Modal Content")
+          shiny::tags$p("Modal Content"),
+          close_button_label = "Close2"
         ),
-        
+        material_modal(
+          modal_id = "example_modal2",
+          button_text = "Modal2",
+          title = "Example Modal Title",
+          button_color = "red lighten-4",
+          button_depth = 5,
+          shiny::tags$p("Modal Content"),
+          close_button_label = "Close2", display_button = FALSE
+        ),
+        material_button(input_id = "open_modal2", label = "testmodal"),
         material_tabs(
           tabs = c(
             "Example Tab 1" = "example_tab_1",
@@ -307,11 +317,23 @@ if(interactive()){
           label = "Drop down",
           choices = c(
             "Chicken" = "c2",
-            "Steak" = "s2",
+            "Ste ak" = "s 2",
             "Fish" = "f2"
           ),
-          selected = c("c"),
+          selected = c("c2"),
           multiple = FALSE,
+          color = "#ef5350"
+        ),
+        material_dropdown(
+          input_id = "input_example_dropdown_mult",
+          label = "Drop down",
+          choices = c(
+            "Chick en" = "c 2",
+            "Ste ak" = "s 2",
+            "Fi sh" = "f 2"
+          ),
+          selected = c("c 2"),
+          multiple = TRUE,
           color = "#ef5350"
         ),
         # date picker -------------------------------------------------------------
@@ -401,6 +423,12 @@ if(interactive()){
   
   
   server <- function(input, output, session) {
+    observeEvent(input$open_modal2, {
+      message('this happened')
+      if(input$open_modal2 > 0){
+      open_material_modal(session, "example_modal2")
+      }
+    })
     #button
     observeEvent(input$input_button1, {
       message(input$input_button1)
@@ -513,6 +541,10 @@ if(interactive()){
     
     observeEvent(input$input_example_dropdown1, {
       message(input$input_example_dropdown1)
+    })
+    
+    observeEvent(input$input_example_dropdown_mult, {
+      message(input$input_example_dropdown_mult)
     })
     observeEvent(input$example_dropdown1, {
       message(input$example_dropdown1)
@@ -656,7 +688,8 @@ if(interactive()){
       #  req(input$example_file_input)
       #  x <- input$example_file_input
       # save(x, file = "infile.Rdata")
-      # message(inFile)
+      message(paste0("length inFile ", length(inFile)))
+      message(paste0("names inFile ", names(inFile)))
       #  message(input$example_file_input)
       x <- read.csv(inFile$datapath)
       message(head(x))
