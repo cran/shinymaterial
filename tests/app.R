@@ -48,10 +48,21 @@ if(interactive()){
           color = "deep-purple"
         ),
         material_card(
-          title = "Example Card",
+          title = "Example Card div",
+          shiny::tags$h1("Card Content"),
+          depth = 5, divider = TRUE
+        ),
+        material_card(
+          title = "Example Card no div",
           shiny::tags$h1("Card Content"),
           depth = 5
-        ),
+        
+      ),
+      material_card(
+        title = "Example Card blue div",
+        shiny::tags$h1("Card Content"),
+        depth = 5, color = "blue", divider = TRUE
+      ),
         # Button ------------------------------------------------------------------
         material_input(
           type = "button",
@@ -292,10 +303,11 @@ if(interactive()){
         ),
         material_slider(
           input_id = "example_slider1",
-          label = "slider",
+          label = "slider  step 3",
           min_value = 5,
           max_value = 15,
           initial_value = 10,
+          step_size = 3,
           color = "#bbdefb"
         ),
         # dropdown
@@ -369,9 +381,10 @@ if(interactive()){
         material_button(input_id = "update_number_box_test_button",
                         label = "update number box"),
         material_number_box(input_id = "update_number_box_test",
-                            label = "test",
+                            label = "test step 3",
                             min_value = 1,
                             max_value = 50,
+                            step_size = 3,
                             initial_value = 2),
         plotOutput('testNumberboxPlot'),
         
