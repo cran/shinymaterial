@@ -9,6 +9,7 @@
 #' @param font_color String. The title font color. Leave blank for the default color. Visit \url{http://materializecss.com/color.html} for a list of available colors. \emph{Title color requires using word forms of colors (e.g. "deep-purple"). Also, lighten or darken effects do not work on title colors.}
 #' @param include_fonts Boolean. Should the material font files be included? (This will place the font sources in a directory 'www', at the same location as the app code.)
 #' @param include_nav_bar Boolean. Should the material nav bar be included?
+#' @param include_icons Boolean. Should the material icon files be included? (This will place the font sources in a directory 'www', at the same location as the app code.)
 #' @examples
 #' material_page(
 #'   title = "Example Title",
@@ -17,9 +18,10 @@
 #'   background_color = "blue lighten-4",
 #'   shiny::tags$h1("Page Content")
 #' )
-material_page <- function(..., title = "", nav_bar_fixed = FALSE, nav_bar_color = NULL, background_color = "grey lighten-4", font_color = NULL, include_fonts = FALSE, include_nav_bar = TRUE){
+material_page <- function(..., title = "", nav_bar_fixed = FALSE, nav_bar_color = NULL, background_color = "grey lighten-4", font_color = NULL, include_fonts = FALSE, include_nav_bar = TRUE, include_icons = FALSE){
   
   materialize_version <- "0.99.0"
+  materialicons_version <- "v42"
   
   if(include_fonts){
     
@@ -43,7 +45,7 @@ material_page <- function(..., title = "", nav_bar_fixed = FALSE, nav_bar_color 
       system.file(paste0("materialize/", materialize_version, "/fonts/roboto"),
                   package = "shinymaterial")
     )
-    
+
     for(font_file.i in font_files){
       file.copy(
         from = system.file(paste0("materialize/", materialize_version, "/fonts/roboto/", font_file.i),
@@ -52,6 +54,36 @@ material_page <- function(..., title = "", nav_bar_fixed = FALSE, nav_bar_color 
         overwrite = TRUE
       )
     }
+  }
+  
+
+  if(include_icons){
+    icons_files <- list.files(
+      system.file(file.path("icons", "materialicons", materialicons_version),
+                  package = "shinymaterial"),
+      full.names = TRUE
+    )
+    
+    
+    if (!dir.exists("www/icons/materialicons/")) {
+      message("[shinymaterial] Creating directory: www/icons/materialicons/")
+      dir.create("www/icons/materialicons/", recursive = TRUE)
+    }
+    
+    for (icon_file.i in icons_files) {
+      file.copy(
+        from = icon_file.i,
+        to = "www/icons/materialicons/",
+        overwrite = TRUE, recursive = TRUE
+      )
+    }
+    
+    icon_css <- system.file("css/shiny-material-icons.css", package = "shinymaterial")
+    
+  } else {
+    
+    icon_css <- "https://fonts.googleapis.com/icon?family=Material+Icons"
+    
   }
   
   material_nav_bar <- shiny::tags$nav(
@@ -94,7 +126,7 @@ material_page <- function(..., title = "", nav_bar_fixed = FALSE, nav_bar_color 
     shiny::tags$head(
       # Fonts
       shiny::includeCSS(
-        "https://fonts.googleapis.com/icon?family=Material+Icons"
+        icon_css
       ),
       # Source Materialize CSS
       shiny::includeCSS(

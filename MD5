@@ -1,6 +1,7 @@
-01728685db994ccab9e92198ecf1c655 *DESCRIPTION
+5a9de3b14c7a00d012c316812b1cd312 *DESCRIPTION
 92a1aff9e5fce817842f482bbf41652c *LICENSE
-fba50e4740828b86075b21c7fdd7cd36 *NAMESPACE
+c890ba43c72116e067e7e611e1c04b2b *NAMESPACE
+09270aa0af10a8af8b04aaee957a4f81 *R/close-shiny-material-modal.R
 25a8b93f82b012f5130ff361fb0699ca *R/open-shiny-material-modal.R
 954c67db0076f7b95391975e49750574 *R/shiny-material-button.R
 b72880e59aaac2ca99274baaa84695f0 *R/shiny-material-card.R
@@ -14,10 +15,10 @@ b72880e59aaac2ca99274baaa84695f0 *R/shiny-material-card.R
 c8658e0540ad2d74f9e888648f2c00c3 *R/shiny-material-input.R
 ab86ae60a62b684016c9e2dcdc6949f6 *R/shiny-material-modal.R
 33e31852e7c532bebcb21e68ccbfcecf *R/shiny-material-number-box.R
-599fc7f4aa5185ce17de710360d5a965 *R/shiny-material-page.R
+21274c71e10fd27f94b536e29462bfbd *R/shiny-material-page.R
 1aa303ea2fa68aecb065d80eed43c24e *R/shiny-material-parallax.R
 33fcdb3fd71aed94a3a0370fe220f9ba *R/shiny-material-password-box.R
-4c34ef471b57382c4ca97c5543549dc8 *R/shiny-material-radio-button.R
+17beb62e7756e66f5784f8a05cc7d613 *R/shiny-material-radio-button.R
 b9f341df4479398c3f3f9cdcda8c6de0 *R/shiny-material-row.R
 5813c6a56257aedb92b59537de33fced *R/shiny-material-side-nav-tab-content.R
 58cc9775830691759a69e895e695f0e3 *R/shiny-material-side-nav-tabs-info.R
@@ -30,6 +31,7 @@ dc038275e83d2c93f24aee29fefb41b2 *R/shiny-material-tab-content.R
 b29ef1c6db0cfeddcfe676b4b924671d *R/shiny-material-tabs.R
 14d83ae627b05eb2218d58a74e53bcdf *R/shiny-material-text-box.R
 3dff23dc443fa07ec4158b3c4e4bfb25 *R/shiny-material-utils.R
+6ef9dedd095402f4502e0cb2611d6b0a *R/update-shiny-material-button.R
 b5f27c74e95fd7e57cac74b133468a73 *R/update-shiny-material-checkbox.R
 9c539fc38da05529ebe2f9ca61cf15cc *R/update-shiny-material-date-picker.R
 e47a588278c58fd5903047b045c8930c *R/update-shiny-material-dropdown.R
@@ -39,12 +41,15 @@ ee556462ce6f91ede8033561df260306 *R/update-shiny-material-password-box.R
 b629b86f9bd1355974b4670f4a95bccb *R/update-shiny-material-slider.R
 c45787d8f1f9f73e3a65746a82d787a0 *R/update-shiny-material-switch.R
 a58eb21ebaf315900398907dcd147ae6 *R/update-shiny-material-text-box.R
+963ec61d4958f9323fd1ef81516aab35 *inst/css/shiny-material-icons.css
 f88dd990824845589b9f44774bf648e9 *inst/css/shiny-material-page.css
 8541820737a68f2fe4634627f6b08ad2 *inst/css/shiny-material-side-nav-fixed-image.css
 45abefc5448d3d0a669744b8a3d303c9 *inst/css/shiny-material-side-nav-fixed.css
 d41d8cd98f00b204e9800998ecf8427e *inst/css/shiny-material-side-nav-image.css
 b51d1a8b1c8198161a76567c4c6e470a *inst/css/shiny-material-side-nav.css
 305f67ef18828a28d927302a4a118692 *inst/css/shiny-material-tabs.css
+ed1c57d6fa7f042758fbc8afbb7a336e *inst/doc/shinymaterial.pdf
+f48107b13475476d85ec6bdde09096c1 *inst/icons/materialicons/v42/flUhRq6tzZclQEJ-Vdg-IuiaDsNc.woff2
 1022da30719d2b382a3d2bfd1e428adc *inst/img/material.png
 aa84eddf476b22f0a625d72da981a640 *inst/js/shiny-material-button.js
 22e9abe00e07a213b31faca43eee8857 *inst/js/shiny-material-checkbox.js
@@ -57,7 +62,7 @@ d55a42bc32efafc596774350e24b7b7a *inst/js/shiny-material-number-box.js
 6f27f20fb1e512f3434110a4028d6f66 *inst/js/shiny-material-page.js
 1b86643be9fff3a99295dd1b92f93dbf *inst/js/shiny-material-parallax.js
 63033aab42a38e4c207c2b50929d4bfe *inst/js/shiny-material-password-box.js
-b04f2a22170a6890e6409388d9d6d8c5 *inst/js/shiny-material-radio-button.js
+c6975fb2be0de0aa2a7316b15ef76d2a *inst/js/shiny-material-radio-button.js
 a48912cf11ae24b82a5898e672a9e966 *inst/js/shiny-material-side-nav-fixed.js
 9773931a9292d0659cf6689b30d98a2e *inst/js/shiny-material-side-nav-tabs.js
 02df9765ba8bde0d4c214868ae3ac8d4 *inst/js/shiny-material-side-nav.js
@@ -78,6 +83,7 @@ cf4d60bc0b1d4b2314085919a00e1724 *inst/materialize/0.99.0/fonts/roboto/Roboto-Me
 44b78f142603eb69f593ed4002ed7a4a *inst/materialize/0.99.0/fonts/roboto/Roboto-Thin.woff
 1f35e6a11d27d2e10d28946d42332dc5 *inst/materialize/0.99.0/fonts/roboto/Roboto-Thin.woff2
 1f6444a11f64b1f89b4137dc1669e55a *inst/materialize/0.99.0/js/materialize.min.js
+8298e55232c8802bd632aed1c2e58070 *man/close_material_modal.Rd
 6918ee59dd19ba392f59302078f5ec1f *man/material_button.Rd
 cccc4a379c30700c18368d26fd4cc3ce *man/material_card.Rd
 c4857022c0d54ec1e7f4bfbb56feb3bb *man/material_checkbox.Rd
@@ -90,10 +96,10 @@ b14ead19ada82d3e8705d96727d0e20f *man/material_file_input.Rd
 deb996ebe75498d425bcdb30332d09c5 *man/material_input.Rd
 a1c243a1143380476c0a07a8047aa020 *man/material_modal.Rd
 f7d168b13dd6cbe8ee21014a2b9ece33 *man/material_number_box.Rd
-7fc8ad1e8cfd98c825d67d511cc9d988 *man/material_page.Rd
+b0e46437c8a54207c824c2e0a8750ea9 *man/material_page.Rd
 c5b9a30e118cd6fe2db87d557719a006 *man/material_parallax.Rd
 544ee035d73593e3dbe6b143ccd8f5c0 *man/material_password_box.Rd
-1b9a5335d9f92e8eed955cbcf047de87 *man/material_radio_button.Rd
+d052103037e96d118738a63a73963e7b *man/material_radio_button.Rd
 522316209c5bf8e599d3f0fad3fc4cff *man/material_row.Rd
 fd7209cb3ba7ab8719a32c67d09347f6 *man/material_side_nav.Rd
 5407ef9376c88937a35a65ff1f132044 *man/material_side_nav_tab_content.Rd
@@ -106,6 +112,7 @@ c603e803d60d922ddcdfc59ea54f6782 *man/material_tabs.Rd
 b1f8beb0aeee89e3d74092e7c2795874 *man/material_text_box.Rd
 e69603135d9cc7d9a5872dd556e90956 *man/open_material_modal.Rd
 90eea7a0826f214453e575f57e5417c1 *man/side_nav_tabs_info.Rd
+e0d398984b2a9baf90f8630668c20621 *man/update_material_button.Rd
 74c3d8e9f1f76e25f5782a69172fa4fd *man/update_material_checkbox.Rd
 ddd51b061946afb443ba23106489d008 *man/update_material_date_picker.Rd
 d094533aaa71acb35a573242bdf051f6 *man/update_material_dropdown.Rd
@@ -115,7 +122,7 @@ a0d0f15ab587a83840849a1cb3f9baa4 *man/update_material_number_box.Rd
 648ac0e11fcf13ceb053a2e125becc1f *man/update_material_slider.Rd
 dfc27c5520415aed0e91fca465164bef *man/update_material_switch.Rd
 4ee920d018137a5b10e4940a252adcc6 *man/update_material_text_box.Rd
-eb144c2ef430930d3fb116460034bfa0 *tests/app.R
+e6ba68c6164f8e73314596501d5d0603 *tests/app.R
 006c6b2a6e9696a703a9a943bd3db3e8 *tests/fileInputTest/app.R
 eed9aab5449cc9c8430d7d258108f602 *tests/fileInputTest/www/fonts/roboto/Roboto-Bold.woff
 c0f1e4a4fdfb8048c72e86aadb2a247d *tests/fileInputTest/www/fonts/roboto/Roboto-Bold.woff2
@@ -139,6 +146,7 @@ cf4d60bc0b1d4b2314085919a00e1724 *tests/include_font_app/www/fonts/roboto/Roboto
 44b78f142603eb69f593ed4002ed7a4a *tests/include_font_app/www/fonts/roboto/Roboto-Thin.woff
 1f35e6a11d27d2e10d28946d42332dc5 *tests/include_font_app/www/fonts/roboto/Roboto-Thin.woff2
 26c5b264a05cd1885ca8d135d1431c65 *tests/issues/app.R
+f48107b13475476d85ec6bdde09096c1 *tests/issues/www/icons/materialicons/flUhRq6tzZclQEJ-Vdg-IuiaDsNc.woff2
 24a4af8157cbf8419ff5245cba3d03d1 *tests/no_nav.R
 ac898411992904d23807a43ee2afad47 *tests/renderUITest/app.R
 eed9aab5449cc9c8430d7d258108f602 *tests/renderUITest/www/fonts/roboto/Roboto-Bold.woff
@@ -175,3 +183,4 @@ cf4d60bc0b1d4b2314085919a00e1724 *tests/www/fonts/roboto/Roboto-Medium.woff
 5136cbe62a63604402f2fedb97f246f8 *tests/www/fonts/roboto/Roboto-Regular.woff2
 44b78f142603eb69f593ed4002ed7a4a *tests/www/fonts/roboto/Roboto-Thin.woff
 1f35e6a11d27d2e10d28946d42332dc5 *tests/www/fonts/roboto/Roboto-Thin.woff2
+f48107b13475476d85ec6bdde09096c1 *tests/www/icons/materialicons/flUhRq6tzZclQEJ-Vdg-IuiaDsNc.woff2
