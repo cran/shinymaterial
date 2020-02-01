@@ -1,4 +1,4 @@
-e62d321055befe381cd40c31d834be84 *DESCRIPTION
+441f596924e02ae3b81d415ea7ea5b97 *DESCRIPTION
 92a1aff9e5fce817842f482bbf41652c *LICENSE
 c890ba43c72116e067e7e611e1c04b2b *NAMESPACE
 db6b6a92c3c749921607fb9949d2c49d *R/close-shiny-material-modal.R
@@ -14,7 +14,7 @@ b72880e59aaac2ca99274baaa84695f0 *R/shiny-material-card.R
 673db80a415e141f5b28e43978ff4b9c *R/shiny-material-file-input.R
 740eeb27313e8877e4241c97208db3ec *R/shiny-material-floating-button.R
 c8658e0540ad2d74f9e888648f2c00c3 *R/shiny-material-input.R
-ab86ae60a62b684016c9e2dcdc6949f6 *R/shiny-material-modal.R
+7ed82bda427ccd76b5f92a009397f222 *R/shiny-material-modal.R
 4c450c5de10e616f6dbbd809e7381d0f *R/shiny-material-number-box.R
 c5b9983d7cb8c424f216062ad7d868e0 *R/shiny-material-page.R
 1aa303ea2fa68aecb065d80eed43c24e *R/shiny-material-parallax.R
@@ -125,7 +125,7 @@ d89c723f2882658e458132e880c44b83 *man/update_material_dropdown.Rd
 758363fae4dae72de348a1e5317f2c97 *man/update_material_slider.Rd
 2fd41308e862d6e6c2cb35748ec94875 *man/update_material_switch.Rd
 9597fa84ac3be509f162457a47e98e07 *man/update_material_text_box.Rd
-2fc5b36505db79a87cb075ae2914456d *tests/app.R
+9ea7411eb99183fadc2ca04a301ef049 *tests/app.R
 006c6b2a6e9696a703a9a943bd3db3e8 *tests/fileInputTest/app.R
 46ce399fa05610fca457cec43f5afba1 *tests/include_font_app/app.R
 8aae81e9db969f339a44cb6c53872e29 *tests/issues/app.R
@@ -137,3 +137,14 @@ ac898411992904d23807a43ee2afad47 *tests/renderUITest/app.R
 d557a4ba94357d213f75bfff63c6da35 *tests/testMaterialCollapsible/materialCollapsibleTest.R
 332078477a8361d88f28d0a925c8d6ee *tests/testUpdateDropdown/app.R
 4ae1dc2ac42ee0587abca81be495491e *tests/test_spinner/app.R
+eed9aab5449cc9c8430d7d258108f602 *tests/www/fonts/roboto/Roboto-Bold.woff
+c0f1e4a4fdfb8048c72e86aadb2a247d *tests/www/fonts/roboto/Roboto-Bold.woff2
+ea36cd9a0e9eee97012a67b8a4570d7b *tests/www/fonts/roboto/Roboto-Light.woff
+3c37aa69cd77e6a53a067170fa8fe2e9 *tests/www/fonts/roboto/Roboto-Light.woff2
+cf4d60bc0b1d4b2314085919a00e1724 *tests/www/fonts/roboto/Roboto-Medium.woff
+1561b424aaef2f704bbd89155b3ce514 *tests/www/fonts/roboto/Roboto-Medium.woff2
+3cf6adf61054c328b1b0ddcd8f9ce24d *tests/www/fonts/roboto/Roboto-Regular.woff
+5136cbe62a63604402f2fedb97f246f8 *tests/www/fonts/roboto/Roboto-Regular.woff2
+44b78f142603eb69f593ed4002ed7a4a *tests/www/fonts/roboto/Roboto-Thin.woff
+1f35e6a11d27d2e10d28946d42332dc5 *tests/www/fonts/roboto/Roboto-Thin.woff2
+f48107b13475476d85ec6bdde09096c1 *tests/www/icons/materialicons/flUhRq6tzZclQEJ-Vdg-IuiaDsNc.woff2
