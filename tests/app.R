@@ -4,8 +4,10 @@ if(interactive()){
   
   ui <-
     material_page(materialize_in_www = FALSE,
+                  primary_theme_color = "yellow",
+                  secondary_theme_color = "black",
       title = "Testing", nav_bar_fixed = TRUE,
-      nav_bar_color = 'red lighten-3',
+     # nav_bar_color = 'red lighten-3',
       background_color = "white",
       include_icons = TRUE, include_fonts = TRUE,
       material_side_nav(
@@ -86,7 +88,7 @@ if(interactive()){
           input_id = "button1",
           label = "Button"
         ),
-        
+      shinymaterial::material_floating_button(input_id = "float", icon="cloud", pulse = TRUE),
         material_input(
           type = "button",
           input_id = "input_button2",
@@ -129,20 +131,17 @@ if(interactive()){
         material_input(
           type = "switch",
           input_id = "input_switch1",
-          label = "Iswitch",
           off_label = "Off",
           on_label = "On"
         ),
         material_switch(
           input_id = "switch1",
-          label = "switch",
           off_label = "Off",
           on_label = "On"
         ),
         material_input(
           type = "switch",
           input_id = "input_switch2",
-          label = "Iswitch",
           off_label = "Off",
           on_label = "On",
           initial_value = TRUE,
@@ -150,7 +149,6 @@ if(interactive()){
         ),
         material_switch(
           input_id = "switch2",
-          label = "switch",
           off_label = "Off",
           on_label = "On",
           initial_value = TRUE,
@@ -380,7 +378,6 @@ if(interactive()){
         ),
       
         material_switch(input_id = "update_button_test_switch", 
-                        label = "update_button_test_switch", 
                         off_label = "No", on_label = "Yes", 
                         initial_value = TRUE),
         material_button(input_id = "update_button_test",
@@ -420,7 +417,7 @@ if(interactive()){
         material_button(input_id = "update_switch_test_button",
                         label = "update switch"),
         material_switch(input_id = "update_switch_test",
-                        label = "text", initial_value = FALSE),
+                        initial_value = FALSE),
         plotOutput('testSwitchPlot'),
         
         material_button(input_id = "update_radio_button_test_button",
