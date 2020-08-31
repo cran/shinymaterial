@@ -1,7 +1,7 @@
 Package: shinymaterial
 Type: Package
 Title: Implement Material Design in Shiny Applications
-Version: 1.1.0
+Version: 1.2.0
 Authors@R: c(
     person("Eric", "Anderson", role = c("aut", "cre"), email = "eric.ray.anderson@gmail.com"),
     person("Alvin", "Wang", role = c("ctb", "cph"), comment = "Materialize CSS library"),
@@ -18,11 +18,11 @@ Encoding: UTF-8
 LazyData: true
 RoxygenNote: 7.1.0
 NeedsCompilation: no
-Packaged: 2020-05-16 18:24:01 UTC; ericrayanderson
+Packaged: 2020-08-31 15:42:59 UTC; ericrayanderson
 Author: Eric Anderson [aut, cre],
   Alvin Wang [ctb, cph] (Materialize CSS library),
   Alan Chang [ctb, cph] (Materialize CSS library),
   Alex Mark [ctb, cph] (Materialize CSS library),
   Kevin Louie [ctb, cph] (Materialize CSS library)
 Repository: CRAN
-Date/Publication: 2020-05-17 01:10:03 UTC
+Date/Publication: 2020-08-31 20:50:02 UTC
